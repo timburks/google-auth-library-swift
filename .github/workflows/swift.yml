@@ -18,8 +18,9 @@ jobs:
       run: |
         SWIFT_URL=https://swift.org/builds/swift-5.1.1-release/ubuntu1404/swift-5.1.1-RELEASE/swift-5.1.1-RELEASE-ubuntu14.04.tar.gz
         curl -fSsL $SWIFT_URL -o swift.tar.gz
-        tar -xzf swift.tar.gz --strip-components=2 --directory=/usr/local
+        sudo tar -xzf swift.tar.gz --strip-components=2 --directory=/usr/local
         find /usr/local
+        which swift
         
     - name: Build
       run: |
