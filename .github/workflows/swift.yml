@@ -34,4 +34,4 @@ jobs:
           swift package -v resolve
           make all
         env:
-          DEVELOPER_DIR: /Applications/Xcode_11.2.app/Cont
+          DEVELOPER_DIR: /Applications/Xcode_11.4.app/Cont
